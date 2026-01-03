@@ -1,16 +1,40 @@
-# Prenotazione Vaccini
-
+# Vaccine Booking
 Software Engineering Project 2020/2021
 
+## Project assignment
 
-Consegna progetto:
+The goal is to design an information system to manage the booking service for vaccination campaigns run by a Local Health Authority (ASL). The booking system is managed by ASL staff, who can enter each vaccination campaign as needed (influenza, Covid-19, SARS, and so on).
 
-Si vuole progettare un sistema informatico per gestire il servizio di prenotazione per le campagne vaccinali di una Azienda Sanitaria Locale (ASL).
-Il sistema di prenotazione è gestito dal personale dell’ASL, che può inserire la campagna vaccinale di volta in volta considerata (influenza, Covid-19, SarS, e così via). Il personale attiva di volta in volta le disponibilità per la somministrazione del vaccino, indicando lo specifico vaccino, i giorni, orari, e ambulatori disponibili per categorie di cittadini e per campagna vaccinale. Le disponibilità sono indicate rispetto alle scorte dei vaccini per le varie campagne.
-I cittadini che aderiscono ad una certa campagna vaccinale possono accedere al sistema di prenotazione dopo essersi registrati. In fase di registrazione, essi devono indicare nome, cognome, codice fiscale, e saranno informati della specifica categoria di appartenenza (“over 80”, “età 70-79”, “paziente oncologico”, “paziente iperteso”, “paziente a rischio”, e così via), di cui il sistema è a conoscenza. Se il cittadino non rientra nell’anagrafica a disposizione del sistema, il sistema stesso provvederà a indicare tale anomalia al cittadino e ad indicare l’email a cui far pervenire eventuali domande di chiarimento.
-Una volta registrati, i cittadini accedono al sistema e trovano le campagne vaccinali a cui possono aderire. Per ogni campagna il cittadino può vedere gli orari e le sedi disponibili giorno per giorno e selezionare il momento desiderato presso l’ambulatorio che desidera. Il sistema permette ovviamente più prenotazioni e registrazioni contemporaneamente da differenti cittadini.
-Il sistema mostra al cittadino anche la finestra temporale nella quale sono state identificate le disponibilità rispetto alle scorte, ed evidenzia opportunamente i periodi per i quali non sono ancora state inserite le disponibilità da parte dell’ASL. In questo modo il cittadino è in grado di distinguere slot occupati, slot liberi e slot non ancora gestiti. Il sistema avvisa il cittadino, che ne abbia fatto richiesta attraverso il sistema, rispetto al momento in cui un certo periodo di tempo sarà disponibile per le prenotazioni di una data campagna vaccinale.
-Il personale ASL associa ad ogni campagna vaccinale le categorie di cittadini che hanno diritto alle vaccinazioni con uno specifico vaccino.
-Il sistema memorizza i dati demografici essenziali per ogni cittadino: codice fiscale, numero di tessera sanitaria, cognome, nome, luogo e data di nascita, specifiche categorie appartenenza (paziente oncologico, paziente iperteso, paziente a rischio, e così via), e verifica che i dati delle registrazioni dei singoli cittadini siano corrette rispetto all’anagrafica a disposizione.
+From time to time, staff activate vaccine administration availability by specifying:
+- the specific vaccine,
+- the available days and time slots,
+- the clinics/medical offices available,
+- and the eligible citizen categories for each vaccination campaign.
 
-Matteo Esposito Marroccella e Nicola Speri
+Availability is defined according to vaccine stock levels for the different campaigns.
+
+Citizens who join a given vaccination campaign can access the booking system after registering. During registration, they must provide first name, last name, and tax code (*codice fiscale*), and they will be informed of their specific eligibility category (e.g., "over 80", "age 70–79", "oncology patient", "hypertensive patient", "at-risk patient", and so on), which is already known by the system.
+
+If the citizen is not found in the registry available to the system, the system will notify the citizen of this issue and provide an email address where they can send any requests for clarification.
+
+Once registered, citizens can log in and see the vaccination campaigns they are eligible for. For each campaign, the citizen can view the available times and locations day by day and select their preferred appointment time at the clinic of their choice.
+
+The system must of course support multiple simultaneous registrations and bookings by different citizens.
+
+The system also shows the citizen the time window for which availability has been defined based on stock levels, and clearly highlights the periods for which ASL staff have not yet entered availability. In this way, the citizen can distinguish between:
+- booked slots,
+- available slots,
+- and slots that are not yet managed/defined.
+
+The system notifies a citizen—if they requested it through the system—when a given time period becomes available for booking for a specific vaccination campaign.
+
+ASL staff associate each vaccination campaign with the citizen categories that are entitled to receive vaccinations with a specific vaccine.
+
+The system stores essential demographic data for each citizen:
+- tax code (*codice fiscale*),
+- health insurance card number,
+- last name and first name,
+- place and date of birth,
+- eligibility categories (oncology patient, hypertensive patient, at-risk patient, etc.),
+
+and it verifies that the data provided during individual citizens' registrations is correct with respect to the registry available to the system.
