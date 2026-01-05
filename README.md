@@ -1,5 +1,5 @@
 # Vaccine Booking
-Software Engineering Project 2020/2021
+Software Engineering Project 2020/2021 (UniVR)
 
 ## Project assignment
 
